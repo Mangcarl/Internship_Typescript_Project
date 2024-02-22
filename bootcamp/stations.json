@@ -1,0 +1,14 @@
+[
+    {"id": 1, "station_name": "North Avenue"},
+    {"id": 2, "station_name": "Quezon Avenue"},
+    {"id": 3, "station_name": "Kamuning"},
+    {"id": 4, "station_name": "Araneta"},
+    {"id": 5, "station_name": "Santolan"},
+    {"id": 6, "station_name": "Ortigas"},
+    {"id": 7, "station_name": "Shaw Boulevard"},
+    {"id": 8, "station_name": "Boni"},
+    {"id": 9, "station_name": "Guadalupe"},
+    {"id": 10, "station_name": "Buendia"},
+    {"id": 11, "station_name": "Ayala"},
+    {"id": 12, "station_name": "Magallanes"}
+]
