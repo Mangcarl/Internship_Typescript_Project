@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { Navigate, useNavigate } from 'react-router-dom';
 
 const appStyle: React.CSSProperties = {
-  // backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR31ADAboY3HLZxK8VEdpyzmcNEHPn9NsG-Ww&usqp=CAU)',
-  backgroundColor: 'red',
+  backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR31ADAboY3HLZxK8VEdpyzmcNEHPn9NsG-Ww&usqp=CAU)',
+  // backgroundColor: 'red',
   minHeight: '100vh',
   backgroundSize: 'cover', // Set background size to cover
   backgroundPosition: 'center',
