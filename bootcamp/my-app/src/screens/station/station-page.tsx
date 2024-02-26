@@ -35,7 +35,7 @@ const StationName: React.FC = () => {
   };
 
   const containerStyle: React.CSSProperties = {
-    // backgroundImage: getBackgroundImage(),
+    backgroundImage: getBackgroundImage(),
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
