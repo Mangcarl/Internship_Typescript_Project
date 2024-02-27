@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import Navigation from '../../components/Navigation';
 import styled from 'styled-components';
 import { Navigate, useNavigate } from 'react-router-dom';
+import mod from './admin-pic.jpg'
+
 
 const appStyle: React.CSSProperties = {
-  // backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR31ADAboY3HLZxK8VEdpyzmcNEHPn9NsG-Ww&usqp=CAU)',
-  backgroundColor: 'red',
+  backgroundImage: `url(${mod})`,
+  // backgroundColor: 'red',
   minHeight: '100vh',
   backgroundSize: 'cover', // Set background size to cover
   backgroundPosition: 'center',
@@ -69,13 +71,13 @@ const handleStation = () => {
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="uuid"
             >
-              UUID
+              Username
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="uuid"
               type="text"
-              placeholder="Input UUID"
+              placeholder="username"
             />
           </div>
           
@@ -84,23 +86,23 @@ const handleStation = () => {
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="password"
             >
-              Station
+              Password
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="station"
               type="text"
-              placeholder='ex: "Araneta" '
+              placeholder='password '
               onChange={(e)=>{setStation(e.target.value)}}
             />
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center">
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline  w-full"
               type="button"
               onClick={handleStation}
             >
-              Travel
+              Login
             </button>
           </div>
         </form>
