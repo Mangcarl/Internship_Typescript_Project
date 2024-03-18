@@ -1,10 +1,10 @@
 import React from 'react';
-import Navigation from '../../components/Navigation';
+import NavAdmin from '../../components/AdminNav';
 import admin from './admin-pic.jpg';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import "../station/styles.css";
 
-const AdminPage: React.FC = () => {
+const StationsTable: React.FC = () => {
   const containerStyle: React.CSSProperties = {
     // backgroundImage: `url(${admin})`,
     backgroundColor: 'orange',
@@ -19,7 +19,7 @@ const AdminPage: React.FC = () => {
 
   return (
     <div className="bg-cover flex flex-col" style={containerStyle}>
-      <Navigation />
+      <NavAdmin />
       <div className="flex flex-col items-center mt-auto pb-12 mb-12">
         {/* Use mt-auto to push the content to the bottom */}
         <a onClick={()=>{
@@ -32,4 +32,4 @@ const AdminPage: React.FC = () => {
   );
 };
 
-export default AdminPage;
+export default StationsTable;

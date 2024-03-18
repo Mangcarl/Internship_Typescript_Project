@@ -122,7 +122,7 @@ const handleStation = () => {
           </div>
           </div>
         </form>
-        <p className="text-center text-black-100 text-xs pt-4 mx-24">
+        <p className="text-center text-black-100 text-xs pt-4 mx-[40%]">
           &copy;2024 MRT Corp. All rights reserved.
         </p>
       </div>

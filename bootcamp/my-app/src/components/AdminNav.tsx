@@ -4,7 +4,7 @@ import {Station} from '../models/mrt';
 
 
 
-const Navigation = () => {
+const NavAdmin = () => {
 const urlParam = useParams()
 const navigate = useNavigate()
 
@@ -31,22 +31,41 @@ const navigate = useNavigate()
             <li>
               <a 
               onClick={()=>{
-                navigate('/home');
+                navigate('/admin/cards');
               }}
               href="" 
-              className="block py-2 px-3 text-white bg-blue-700 rounded 
-                md:bg-transparent 
-                md:text-blue-700 
-                md:p-0 dark:text-white 
-                md:dark:text-blue-500" 
-                aria-current="page">
-                Home
+              className="block py-2 px-3 text-white rounded 
+              hover:bg-gray-100 
+              md:hover:bg-transparent 
+              md:border-0 
+              md:hover:text-blue-700 
+              md:p-0 dark:text-white 
+              md:dark:hover:text-blue-500 
+              dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                Cards
               </a>
             </li>
             <li>
               <a 
               onClick={()=>{
-                navigate('/stations');
+                navigate('/admin/settings');
+              }}
+              href="" 
+              className="block py-2 px-3 text-white rounded 
+              hover:bg-gray-100 
+              md:hover:bg-transparent 
+              md:border-0 
+              md:hover:text-blue-700 
+              md:p-0 dark:text-white 
+              md:dark:hover:text-blue-500 
+              dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                Settings
+              </a>
+            </li>
+            <li>
+              <a 
+              onClick={()=>{
+                navigate('/admin/stations-table');
               }}
               href="" 
               className="block py-2 px-3 text-white rounded 
@@ -57,12 +76,12 @@ const navigate = useNavigate()
               md:p-0 
               dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Station
+                Stations
               </a>
             </li>
             <li>
               <a onClick={()=>{
-                navigate('/admin')
+                navigate('/home')
               }}
               href="" 
               className="block py-2 px-3 text-white rounded 
@@ -73,24 +92,7 @@ const navigate = useNavigate()
                 md:p-0 dark:text-white 
                 md:dark:hover:text-blue-500 
                 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  Admin
-              </a>
-            </li>
-            <li>
-              <a 
-              onClick={()=>{
-                navigate('/contact');
-              }}
-              href="" 
-              className="block py-2 px-3 text-white rounded
-                hover:bg-gray-100 
-                md:hover:bg-transparent 
-                md:border-0 
-                md:hover:text-blue-700 
-                md:p-0 dark:text-white 
-                md:dark:hover:text-blue-500 
-                dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Contact
+                  User
               </a>
             </li>
           </ul>
@@ -101,7 +103,7 @@ const navigate = useNavigate()
 }
 
 
-export default Navigation;
+export default NavAdmin;
 
 function useState(arg0: string): [any, any] {
   throw new Error('Function not implemented.');

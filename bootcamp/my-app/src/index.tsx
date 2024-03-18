@@ -9,11 +9,14 @@ import {
 } from "react-router-dom";
 import Contact from './screens/contact';
 import StationName from './screens/station/station-page';
-import AdminPage from './screens/admin/admin-page';
+import AdminPage from './screens/admin/cards';
 import Service from './screens/service/service';
 import ContactPage from './screens/contact/contact-page';
 import { Test } from './screens/test';
 import RealAdmin from './screens/admin/real-admin';
+import Cards from './screens/admin/cards';
+import StationsTable from './screens/admin/stations-table';
+import Settings from './screens/admin/settings';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -54,6 +57,21 @@ const router = createBrowserRouter([
   {
     path: "/services",
     element: <Service/>
+  },
+
+  {
+    path: "/admin/cards",
+    element: <Cards/>
+  },
+
+  {
+    path: "/admin/stations-table",
+    element: <StationsTable/>
+  },
+
+  {
+    path: "/admin/settings",
+    element: <Settings/>
   }
 
 ]);
